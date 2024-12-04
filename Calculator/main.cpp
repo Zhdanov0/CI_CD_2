@@ -20,7 +20,7 @@ int main() {
         std::cout << "Enter operation (+,-,*,/): ";
         std::cin >> operation;
 
-        switch (op) {
+        switch (operation) {
         case '+':
             std::cout << "Reuslt: " << operations.add(a, b) << "\n\n";
             break;
