@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-    run:
+    run_tests:
         runs-on: windows-latest
         steps:
           - name: Checkout code
@@ -19,4 +19,6 @@ jobs:
             uses: microsoft/setup-msbuild@v2
                      
           - name: Build solution
-            run: msbuild Calculator.sln -target:Calculator 
+            run: msbuild Calculator.sln -target:Calculator,CalculatorTests
+            
+          - run:  ./x64/Release/CalculatorTests.exe
