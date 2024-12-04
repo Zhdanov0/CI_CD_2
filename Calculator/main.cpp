@@ -2,10 +2,12 @@
 #include "calculator.h"
 
 
+
+
 int main() {
     int a = 0;
     int b = 0;
-    char op;
+    char operation;
     
     Operations operations;
 
@@ -16,7 +18,7 @@ int main() {
         std::cout << "Enter second number: ";
         std::cin >> b;
         std::cout << "Enter operation (+,-,*,/): ";
-        std::cin >> op;
+        std::cin >> operation;
 
         switch (op) {
         case '+':
