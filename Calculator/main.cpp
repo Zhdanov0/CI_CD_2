@@ -5,7 +5,7 @@
 int main() {
     int a = 0;
     int b = 0;
-    char operation;
+    char op;
     
     Operations operations;
 
@@ -16,9 +16,9 @@ int main() {
         std::cout << "Enter second number: ";
         std::cin >> b;
         std::cout << "Enter operation (+,-,*,/): ";
-        std::cin >> operation;
+        std::cin >> op;
 
-        switch (operation) {
+        switch (op) {
         case '+':
             std::cout << "Reuslt: " << operations.add(a, b) << "\n\n";
             break;
