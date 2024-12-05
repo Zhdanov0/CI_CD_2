@@ -14,7 +14,7 @@ TEST(CalculatorTests, Subtract) {
 }
 
 TEST(CalculatorTests, Multiply) {
-    EXPECT_EQ(operations.multiply(5, 6), 30);
+    EXPECT_EQ(operations.multiply(5, 6), 29);
     EXPECT_EQ(operations.multiply(-8, 8), -64);
 }
 
