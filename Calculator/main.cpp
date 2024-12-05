@@ -5,9 +5,8 @@
 
 
 int main() {
-    int a = 0;
-    int b = 0;
-    char operation;
+    double a = 0;
+    double b = 0;
     
     Operations operations;
 
@@ -17,26 +16,19 @@ int main() {
         std::cin >> a;
         std::cout << "Enter second number: ";
         std::cin >> b;
-        std::cout << "Enter operation (+,-,*,/): ";
-        std::cin >> operation;
+        std::cout << "Enter operation (+,-,*,/, ): ";
 
-        switch (operation) {
-        case '+':
-            std::cout << "Reuslt: " << operations.add(a, b) << "\n\n";
-            break;
-        case '-':
-            std::cout << "Reuslt: " << operations.subtract(a, b) << "\n\n";
-            break;
-        case '*':
-            std::cout << "Reuslt: " << operations.multiply(a, b) << "\n\n";
-            break;
-        case '/':
-            std::cout << "Reuslt: " << operations.divide(a, b) << "\n\n";
-            break;
-        default:
-            std::cout << "Invalid operation.\n";
-            break;
-        }
+
+        std::cout << "a + b: " << operations.add(a, b) << "\n\n";
+
+        std::cout << "a - b: " << operations.subtract(a, b) << "\n\n";
+
+        std::cout << "a * b: " << operations.multiply(a, b) << "\n\n";
+
+        std::cout << "a / b: " << operations.divide(a, b) << "\n\n";
+
+        std::cout << "a^b: " << operations.power(a, b) << "\n\n";
+
     }
     
     return 0;

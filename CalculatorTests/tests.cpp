@@ -14,11 +14,16 @@ TEST(CalculatorTests, Subtract) {
 }
 
 TEST(CalculatorTests, Multiply) {
-    EXPECT_EQ(operations.multiply(5, 6), 29);
+    EXPECT_EQ(operations.multiply(5, 6), 30);
     EXPECT_EQ(operations.multiply(-8, 8), -64);
 }
 
 TEST(CalculatorTests, Divide) {
     EXPECT_EQ(operations.divide(18, 3), 6);
     EXPECT_EQ(operations.divide(5, 0), 0);
+}
+
+TEST(CalculatorTests, SquareRoot) {
+    EXPECT_EQ(operations.power(4,2), 16);
+    EXPECT_EQ(operations.power(10,0), 1);
 }
