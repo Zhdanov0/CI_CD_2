@@ -25,21 +25,21 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      # Install Doxygen
+      #Install Doxygen
       - name: Install Doxygen
         run: sudo apt install doxygen && doxygen --version
 
       - name: Install Graphviz
         run: sudo apt install graphviz
         
-      # Create documentation   
+      #Create documentation   
       - name: Create documentation     
         run: doxygen
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
+          #Upload entire repository
           path: './html/'
       - name: Deploy to GitHub Pages
         id: deployment
