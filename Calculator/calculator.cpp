@@ -19,13 +19,11 @@ double Operations::power(double a, int b) {
 
     double result = 1;
     while (b > 0) {
-        // Если степень нечетная, умножаем результат на основание
         if (b & 1) {
             result *= a;
         }
-        // Удваиваем основание и делим степень пополам
         a *= a;
-        b >>= 1; // Эквивалентно exponent = exponent / 2, но быстрее
+        b >>= 1;
     }
 
     return result;
