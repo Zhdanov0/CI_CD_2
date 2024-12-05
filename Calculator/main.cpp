@@ -16,7 +16,7 @@ int main() {
         std::cin >> a;
         std::cout << "Enter second number: ";
         std::cin >> b;
-        std::cout << "Enter operation (+,-,*,/, ): ";
+        std::cout << "Enter operation (+,-,*,/, ): \n\n";
 
 
         std::cout << "a + b: " << operations.add(a, b) << "\n\n";
@@ -27,7 +27,7 @@ int main() {
 
         std::cout << "a / b: " << operations.divide(a, b) << "\n\n";
 
-        std::cout << "a^b: " << operations.power(a, b) << "\n\n";
+        //std::cout << "a^b: " << operations.power(a, b) << "\n\n";
 
     }
     
