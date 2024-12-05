@@ -27,7 +27,6 @@ double Operations::power(double a, int b) {
     }
 
     return result;
-
 }
 
 
