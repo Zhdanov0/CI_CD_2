@@ -17,16 +17,16 @@ double Operations::power(double a, int b) {
         b = -b;
     }
 
-    double result = 1;
+    double res = 1;
     while (b > 0) {
         if (b & 1) {
-            result *= a;
+            res *= a;
         }
         a *= a;
         b >>= 1;
     }
 
-    return result;
+    return res;
 }
 
 
