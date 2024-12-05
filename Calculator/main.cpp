@@ -27,7 +27,7 @@ int main() {
 
         std::cout << "a / b: " << operations.divide(a, b) << "\n\n";
 
-        //std::cout << "a^b: " << operations.power(a, b) << "\n\n";
+        std::cout << "a^b: " << operations.power(a, b) << "\n\n";
 
     }
     

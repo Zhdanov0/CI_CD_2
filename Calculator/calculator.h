@@ -12,6 +12,6 @@ public:
 
 	double divide(double a, double b);
 
-	//double power(double a, int b);
+	double power(double a, int b);
 
 };
