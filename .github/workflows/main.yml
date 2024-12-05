@@ -29,8 +29,6 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'pull_request' }}
     steps:
-      - name: Debug event
-        run: echo "Mergeable state: ${{ github.event.pull_request.mergeable_state }}"
       
       - name: Auto-merge pull request
         uses: peter-evans/auto-merge@v2
