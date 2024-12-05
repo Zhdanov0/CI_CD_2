@@ -23,14 +23,3 @@ jobs:
       
       - name: Run tests
         run: ./x64/Debug/CalculatorTests.exe
-
-  auto_merge:
-    needs: run_tests
-    runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'pull_request' }}
-    steps:
-      
-      - name: Auto-merge pull request
-        uses: peter-evans/auto-merge@v2
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
