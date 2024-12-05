@@ -1,5 +1,2 @@
-﻿  calculator.cpp
-  main.cpp
-D:\учеба в МАИ\1 сем МАГА\ТРПИС\CI_CD_2\Calculator\main.cpp(30,53): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-  Создание кода...
+﻿  main.cpp
   Calculator.vcxproj -> D:\учеба в МАИ\1 сем МАГА\ТРПИС\CI_CD_2\x64\Debug\Calculator.exe
