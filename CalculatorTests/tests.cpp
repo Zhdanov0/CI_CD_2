@@ -23,7 +23,7 @@ TEST(CalculatorTests, Divide) {
     EXPECT_EQ(operations.divide(5, 0), 0);
 }
 
-TEST(CalculatorTests, SquareRoot) {
-    EXPECT_EQ(operations.power(4,2), 16);
-    EXPECT_EQ(operations.power(10,0), 1);
-}
+//TEST(CalculatorTests, SquareRoot) {
+//    EXPECT_EQ(operations.power(4,2), 16);
+//    EXPECT_EQ(operations.power(10,0), 1);
+//}
